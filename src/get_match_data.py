@@ -45,7 +45,7 @@ def get_data(id: int):
         # Open a cursor to perform database operations
         cur = conn.cursor()
 
-        # Execute a SELECT query to fetch data from a table
+        # Execute a SELECT query to fetch data from matches table
         cur.execute(f"SELECT job_id, prospect_id, match_value FROM prospect_finder.matches WHERE job_id = {id}")
 
         # Fetch all rows from the result set
@@ -75,4 +75,8 @@ def get_data(id: int):
         return result
     
     except psycopg2.Error as e:
+        if conn: 
+            conn.close()
+        if cur:
+            cur.close()
         return e
