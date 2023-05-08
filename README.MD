@@ -40,3 +40,5 @@ The following API endpoints are available:
 
 
 ###Architecture Diagram:
+
+![image](https://user-images.githubusercontent.com/66978679/236876612-a80194ba-7c95-48be-b76b-363a4e5cd47d.png)
