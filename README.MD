@@ -35,10 +35,15 @@ This API uses Amazon RDS as the PostgreSQL database. Amazon RDS makes it easy to
 
 The following API endpoints are available:
 
-    /get-best-match - Allows users to create an account and retrieve their profile information.
+    /get-best-match - Allows users to pull the candidate that best fits the job that was queried.
         - query parameters - jobId: integer(required)
 
 
 ### Architecture Diagram:
 
 ![image](https://user-images.githubusercontent.com/66978679/236876612-a80194ba-7c95-48be-b76b-363a4e5cd47d.png)
+
+### Database ERD:
+
+![image](https://user-images.githubusercontent.com/66978679/236877890-59b044aa-809b-4ef2-b70d-e298dc4def0d.png)
+
